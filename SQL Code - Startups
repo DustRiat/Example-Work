@@ -1,8 +1,8 @@
 /*
 This is a basic mini-project for
 the Codecademy Learn SQL course.
-This code shows the requested queries
-for the Startups analysis.
+This code creates the table for
+the rest of the project.
 */
 
 CREATE TABLE startups (
