@@ -1,6 +1,8 @@
 /*
-This is a basic project assignment
-for the Codecademy Learn SQL course.
+This is a basic mini-project for
+the Codecademy Learn SQL course.
+This code shows the table creation
+for the X-Men mutant team.
 */
 
 CREATE TABLE xmen (
@@ -20,9 +22,11 @@ VALUES
 
 SELECT * FROM xmen;
 
+--Add a new column for the member codenames
 ALTER TABLE xmen
 ADD COLUMN codename TEXT;
 
+--Update all records to include member codenames
 UPDATE xmen
 SET codename = 'Professor X'
 WHERE name = 'Charles Xavier';
@@ -45,9 +49,11 @@ WHERE name = 'Ororo Munroe';
 
 SELECT * FROM xmen;
 
+--Add a new column for the member email addresses
 ALTER TABLE xmen
 ADD COLUMN email TEXT;
 
+--Update all records to include email addresses
 UPDATE xmen
 SET email = 'profx@codecademy.com'
 WHERE codename = 'Professor X';
@@ -70,6 +76,7 @@ WHERE codename = 'Storm';
 
 SELECT * FROM xmen;
 
+--Remove any records for members without a codename
 DELETE FROM xmen
 WHERE codename IS NULL;
 
