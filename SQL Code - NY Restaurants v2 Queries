@@ -1,8 +1,8 @@
 /*
-This is a basic project assignment
-for the Codecademy Learn SQL course.
-This code shows the assignment queries
-for the NY restaurants table.
+This is a basic mini-project for
+the Codecademy Learn SQL course.
+This code shows the requested queries
+for the NY Restaurants analysis.
 */
 
 SELECT DISTINCT neighborhood
